@@ -1,0 +1,127 @@
+.footer {
+    padding: 24px 0;
+    background-color: #ffffff;
+}
+.footer__logo {
+    width: 196px;
+    margin-bottom: 24px;
+}
+.footer__address {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 34px;
+    font-style: normal;
+}
+.footer__title {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 100%;
+    margin-bottom: 8px;
+}
+.footer__link-phone {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 130%;
+}
+.footer__link-phone:hover {
+    color: #FFAB08;
+    transition: color .1s ease-in-out;
+}
+.footer__list {
+    display: flex;
+    gap: 16px;
+}
+.footer__link-socialnetwork {
+    color: #FF7020;
+}
+.footer__link-socialnetwork:hover, .footer__link-socialnetwork:focus {
+    color: #FFAB08;
+    transition: color .2s ease-in-out;
+}
+.footer__development {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+@media (min-width: 480px) {
+.footer__logo {
+    margin-bottom: 36px;
+}
+.footer__address {
+    flex-direction: row;
+    margin-bottom: 40px;
+}
+.footer__contact {
+    flex-basis: 218px;
+    flex-grow:1;
+}
+}
+@media (min-width: 768px) {
+.footer {
+    padding: 40px 0 26px;
+}
+.footer__logo {
+    margin-bottom: 36px; 
+}
+}
+@media (min-width: 1024px) {
+.footer {
+    padding: 52px 0 39px;
+}
+.footer__content {
+    display: grid;
+    gap: 35px;
+    grid-template-areas: 
+    'logo address'
+    'development .';
+}
+.footer__logo {
+    width: 300px;
+    margin-bottom:0;
+    grid-area: logo; 
+}
+.footer__address {
+    margin-bottom: 0;
+    grid-area: address; 
+    gap: 50px;
+    justify-content: flex-end;
+}
+.footer__contact {
+    flex-basis: unset;
+    flex-grow: unset;
+}
+.footer__title {
+    margin-bottom: 24px;
+    font-size: 24px;
+}
+.footer__title_sn {
+    margin-bottom: 22px;
+}
+.footer__link-phone {
+    font-size: 16px;
+}
+.footer__development {
+    grid-area: development;
+}
+}
+@media (min-width: 1360px) {
+.footer__content {
+    grid-template-columns: 1fr 1fr;
+    gap: 34px 30px;
+}
+.footer__address {
+    justify-content: flex-start;
+    gap: 30px;
+}
+.footer__contact {
+    width: 50%;
+}
+}

@@ -1,0 +1,50 @@
+.modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.80);;
+    cursor: pointer;
+    overflow-y: auto;
+    display: none;
+    z-index: 20;
+}
+.modal_open {
+    display: flex;
+}
+.modal__main{
+    position: relative;
+    cursor: default;
+    margin: auto;
+}
+.modal__close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    outline: 1px solid transparent;
+    outline-offset: 3px;
+    color: #B1B1B1;
+    border-radius: 9px;
+    transition: color .1s ease-in-out;
+} 
+.modal__close:focus-visible {
+    color: #FF7020;
+    outline-color: #FF7020;
+}
+.modal__close:hover {
+    color: #FF7020;
+    outline-color: #FF7020;
+}
+@media (min-width: 480px) {
+.modal {
+    padding: 10px;
+}
+.modal__close {
+    right: 16px;
+    top: 16px;
+    }
+}
+@media (min-width: 1024px) {
+.modal__close {
+    right: 24px;
+    top: 24px;
+    }
+}
